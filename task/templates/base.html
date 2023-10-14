@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Your Website Title{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <!-- Add other common meta tags, stylesheets, and scripts here -->
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Your Website Header{% endblock %}</h1>
+        <!-- Add navigation menu or other common header content here -->
+    </header>
+    <main>
+        {% block content %}
+        <!-- Content from individual templates will go here -->
+        {% endblock %}
+    </main>
+    <footer>
+        <!-- Add footer content here -->
+    </footer>
+</body>
+</html>
